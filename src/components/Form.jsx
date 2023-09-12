@@ -37,14 +37,14 @@ export function Form() {
           className="formulario-input"
           type="text"
           value={name}
-          placeholder="Nombre"
+          placeholder="Nombre completo"
           onChange={(e) => setName(e.target.value)}
         />
         <input
           className="formulario-input"
           type="email"
           value={email}
-          placeholder="Correo electronico"
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <button className="form-button" type="submit">

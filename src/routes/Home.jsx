@@ -21,9 +21,6 @@ export function Home() {
       className="home"
       style={{ backgroundColor: tema.home, color: tema.font }}
     >
-      <p className="principal">Bienvenido a la sección principal</p>
-      <hr />
-      <br />
       <section className="card-home">
         {data.map(function (item) {
           return (

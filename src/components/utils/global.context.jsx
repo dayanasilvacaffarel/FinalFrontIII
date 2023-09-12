@@ -2,21 +2,21 @@
 
 import { createContext } from "react";
 
-export const estadoInicial = {
+export const estadoOriginal = {
   tema: {
-    claro: {
-      nav: "#ffff",
-      home: "#77878b",
-      footer: "#ffff",
+    light: {
+      nav: "#AE8CA3",
+      home: "#ffff",
+      footer: "#AE8CA3",
       font: "#1b2021",
     },
-    oscuro: {
+    dark: {
       nav: "#000",
-      home: "#39353487",
-      footer: "#3b2722a5",
+      home: "#1D1E2C",
+      footer: "#000",
       font: "#FFFAF0",
     },
   },
 };
 
-export const ContextGlobal = createContext(estadoInicial);
+export const ContextGlobal = createContext(estadoOriginal);

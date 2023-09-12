@@ -6,13 +6,13 @@ import { ContextGlobal } from "./utils/global.context";
 export function Navbar() {
   const { cambioTema } = useContext(ContextGlobal);
   const { tema } = useContext(ContextGlobal);
-  const [colorBoton, setColorBoton] = useState("#8B4513");
+  const [colorBoton, setColorBoton] = useState("#5e3153");
 
   function cambiarColorBoton() {
-    if (colorBoton === "#8B4513") {
-      setColorBoton("#c199956c");
+    if (colorBoton === "#5e3153") {
+      setColorBoton("#dcbcd4");
     } else {
-      setColorBoton("#8B4513");
+      setColorBoton("#5e3153");
     }
   }
   return (
@@ -21,7 +21,7 @@ export function Navbar() {
       style={{ backgroundColor: tema.nav, color: tema.font }}
     >
       <Link className="nav-title" to={"/"}>
-        Principal
+        Inicio
       </Link>
       <Link className="nav-title" to={"/contact"}>
         Contacto

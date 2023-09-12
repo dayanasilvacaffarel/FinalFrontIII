@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 .card {
-  width: 15%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.467);
-  transition: transform 0.3s ease;
-  background-color: #f3a712;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: #AE8CA3;
 }
 
 .card-link {
@@ -17,54 +17,44 @@
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.10);
 }
 
 .imagen {
-  border: 3px solid #5e5043;
-  width: 80%;
+  width: 70%;
   max-height: 200px;
-  object-fit: cover;
   margin: 10px;
-  border-radius: 50%;
+  border-radius: 16px;
 }
 
 .name {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  color: #262525;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1D1E2C;
   margin-top: 10px;
   text-align: center;
-  text-decoration: none;
-}
-
-.user {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.1rem;
-  color: #3f3f3f;
-  margin-bottom: 10px;
-  text-decoration: none;
 }
 
 .boton-card {
   margin-top: 15px;
-  background-color: #4caf50;
+  background-color: #6E44FF;
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .boton-card:hover {
-  background-color: #45a049;
+  background-color: #532ae8;
 }
 
 .boton-card-delete {
   margin-top: 15px;
-  background-color: #af4c4c;
+  background-color: #EB4511;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -75,16 +65,16 @@
 }
 
 .boton-card-delete:hover {
-  background-color: #a04845d8;
+  background-color: #cb3406;
 }
 
 .card.favorite {
-  background-color: #a27b6068;
+  background-color: #eae1e8;
 }
 
 .mensaje-card {
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins, sans-serif;
   margin-top: 15px;
   padding: 10px;
   text-align: center;
@@ -92,11 +82,11 @@
 }
 
 .mensaje-card.added {
-  background-color: #0fff07e2;
+  background-color: #6F9283;
   color: #000;
 }
 
 .mensaje-card:not(.added) {
-  background-color: #a72828e1;
+  background-color: #FC2F00;
   color: #fff;
 }

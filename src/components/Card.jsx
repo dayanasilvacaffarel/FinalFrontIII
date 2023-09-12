@@ -13,7 +13,7 @@ export function Card({ id, name, username }) {
   const [mensaje, setMensaje] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
 
-  function addFav() {
+  function agregarFavorito() {
     const odontologos = JSON.parse(localStorage.getItem("odontologos") || "[]");
     const odontologoAdd = odontologos.find((e) => e.id === odontologo.id);
 
@@ -28,11 +28,11 @@ export function Card({ id, name, username }) {
     }
     setTimeout(() => {
       setMensaje(false);
-    }, 2000);
-    console.log("Agregando odontologos" + odontologo.id);
+    }, 1000);
+
   }
 
-  function removeFav() {
+  function eliminarFavorito() {
     const odontologos = JSON.parse(localStorage.getItem("odontologos") || "[]");
     const updatedOdontologos = odontologos.filter(
       (e) => e.id !== odontologo.id
@@ -42,35 +42,35 @@ export function Card({ id, name, username }) {
     setMensaje(true);
     setTimeout(() => {
       setMensaje(false);
-    }, 2000);
-    console.log("Eliminando odontologo" + odontologo.id);
+    }, 1000);
+
   }
 
-  const isFavorite = JSON.parse(
+  const esFavorito = JSON.parse(
     localStorage.getItem("odontologos") || "[]"
   ).some((e) => e.id === odontologo.id);
 
   return (
-    <article className={`card ${isFavorite ? "favorite" : ""}`}>
+    <article className={`card ${esFavorito ? "favorite" : ""}`}>
       <Link to={`/details/${id}`} className="card-link">
         <img className="imagen" src={img} alt="doctor" />
         <p className="name">{name}</p>
       </Link>
-      {!isFavorite && (
-        <button className="boton-card" onClick={addFav}>
-          Añadir a favoritos
+      {!esFavorito && (
+        <button className="boton-card" onClick={agregarFavorito}>
+          Agregar a favoritos
         </button>
       )}
-      {isFavorite && (
-        <button className="boton-card-delete" onClick={removeFav}>
-          Eliminar de favoritos
+      {esFavorito && (
+        <button className="boton-card-delete" onClick={eliminarFavorito}>
+          Quitar de favoritos
         </button>
       )}
       {mensaje && (
         <p className={`mensaje-card ${isAdded ? "added" : ""}`}>
           {isAdded
-            ? "El odontólogo se añadio a favoritos"
-            : "El odontólogo se elimino de favoritos"}
+            ? "Añadido a favoritos"
+            : "Se elimino de favoritos"}
         </p>
       )}
     </article>

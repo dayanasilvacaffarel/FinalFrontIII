@@ -21,7 +21,7 @@ export function Favs() {
     >
       <p className="title-favs">Odontólogos favoritos</p>
       {odontologos.length === 0 ? (
-        <p className="advertencia">No hay guardado ningún odontólogo</p>
+        <p className="advertencia">No se ha guardado ningún odontólogo</p>
       ) : (
         <section className="card-favs">
           {odontologos.map(function (item) {
