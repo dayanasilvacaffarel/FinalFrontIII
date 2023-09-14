@@ -13,23 +13,19 @@
   font-size: 0;
   cursor: pointer;
 }
-
-.face {
+.whatsapp {
   border-radius: 8px;
 }
-
-.ig {
+.instagram {
   border-radius: 8px;
 }
-
-
-.wp {
+.facebook {
   border-radius: 8px;
 }
 
 .images img {
   width: 2rem;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .info-footer {
