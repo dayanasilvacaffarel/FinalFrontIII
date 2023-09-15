@@ -3,38 +3,35 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
 }
 
 .title-detalle {
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  user-select: none;
+  font-size: 1.5rem;
+  font-family: Poppins, sans-serif;
 }
 
 .info {
-  margin: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.7rem;
+  margin: 0.5rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
   user-select: none;
-  border: 3px solid #8d7966;
-  padding: 25px;
-  border-radius: 15px;
-  background-color: #8f755d4f;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #AE8CA3;
 }
 
-.atras {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 15px 0px 40px 0px;
+.volver {
+  font-family: Poppins, sans-serif;
+  margin: 16px 32px;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 8px 32px;
+  background-color: #6F9283;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
-.atras:hover {
-  background-color: #0056b3;
+.volver:hover {
+  background-color: #323a36;
 }

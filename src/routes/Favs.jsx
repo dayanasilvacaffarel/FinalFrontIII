@@ -19,7 +19,6 @@ export function Favs() {
       className="favs"
       style={{ backgroundColor: tema.home, color: tema.font }}
     >
-      <p className="title-favs">Odontólogos favoritos</p>
       {odontologos.length === 0 ? (
         <p className="advertencia">No se ha guardado ningún odontólogo</p>
       ) : (

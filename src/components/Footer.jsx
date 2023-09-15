@@ -25,9 +25,6 @@ export function Footer() {
         <a className="button-class" href="https://www.facebook.com/">
           <img className="face" src={face} alt="Facebook" />
         </a>
- 
-
-
       </div>
     </footer>
   );

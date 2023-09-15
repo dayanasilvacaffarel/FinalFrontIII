@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 .nav-title {
@@ -17,16 +16,11 @@
   transition: background-color 0.3s ease;
 }
 
-
-
 .nav-title:hover {
   background-color: #ddced8;
-  border-radius: 10px;
 }
 
-
 .boton {
-
   font-size: 1.2rem;
   border: none;
   padding: 12px 20px;
@@ -35,5 +29,9 @@
 }
 
 .boton:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+
+img {
+  border-radius: 0.5rem;
 }

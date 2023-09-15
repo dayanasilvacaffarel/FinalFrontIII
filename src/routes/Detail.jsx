@@ -33,8 +33,8 @@ export function Detail() {
         <p className="data">Celular: {detalle.phone}</p>
         <p className="data">Web: {detalle.website}</p>
       </div>
-      <Link to="/" className="atras">
-        Volver a Inicio
+      <Link to="/" className="volver">
+        Inicio
       </Link>
     </article>
   );

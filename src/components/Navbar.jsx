@@ -20,15 +20,18 @@ export function Navbar() {
       className="navbar"
       style={{ backgroundColor: tema.nav, color: tema.font }}
     >
-      <Link className="nav-title" to={"/"}>
-        Inicio
-      </Link>
-      <Link className="nav-title" to={"/contact"}>
-        Contacto
-      </Link>
-      <Link className="nav-title" to={"/favs"}>
-        Favoritos
-      </Link>
+      <img src="src\images\DH.ico" alt="Logo DH" />
+      <div>
+        <Link className="nav-title" to={"/"}>
+          Inicio
+        </Link>
+        <Link className="nav-title" to={"/contact"}>
+          Contacto
+        </Link>
+        <Link className="nav-title" to={"/favs"}>
+          Favoritos
+        </Link>
+      </div>
       <button
         className="boton"
         onClick={() => {

@@ -2,17 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin: 1rem;
   border-radius: 16px;
   background-color: #AE8CA3;
-  padding: 30px;
-
+  padding: 1rem;
 }
 
 .formulario-input {
   font-size: 1.2rem;
   margin: 8px;
   border-radius: 8px;
+  padding: 1rem;
+  border: none
 }
 
 ::placeholder {
@@ -24,9 +25,9 @@
   background-color: #4caf50;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 16px 32px;
   font-size: 16px;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 20px;
@@ -37,7 +38,7 @@
 }
 
 .error {
-  font-family: Poppins, Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: center;
   color: rgba(172, 22, 22, 0.884);
   font-size: 1.1rem;
@@ -45,7 +46,7 @@
 
 .enviado {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins, sans-serif;
   color: rgb(45, 106, 52);
   font-weight: bold;
   font-size: 1.1rem;
