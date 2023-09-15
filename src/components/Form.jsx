@@ -14,7 +14,7 @@ export function Form() {
       setError("Por favor verifique su información nuevamente");
       return;
     }
-    setMensaje(`Gracias ${name}, te contactaremos cuando antes vía mail a: ${email}`);
+    setMensaje(`Gracias ${name}, te contactaremos cuanto antes vía mail a: ${email}`);
     setError("");
   }
 
